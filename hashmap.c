@@ -40,6 +40,36 @@ int is_equal(void* key1, void* key2){
 
 
 void insertMap(HashMap * map, char * key, void * value) {
+    long posicion=hash(key,map->capacity);
+    if(map->buckets[posicion]==NULL)
+    {
+        map->buckets[posicion]->key= key;
+        map->buckets[posicion]->value= value;
+        map->size++;
+        map->current=posicion;
+
+    }
+    else
+    {
+        int flag = 1;
+        while(flag=1)
+        {
+            if(map->buckets[posicion]!=NULL && map->buckets[posicion]->key !=NULL)
+            {
+                map->buckets[posicion]->key= key;
+                map->buckets[posicion]->value=value;
+                map->size++;
+                map->current=posicion;
+                flag=0;
+            }
+            if(posicion==map->capacity)
+            {
+                posicion=(posicion+1)%map->capacity;
+            }
+            posicion++;
+
+        }
+    }
 
 
 }
