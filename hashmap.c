@@ -52,7 +52,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     else
     {
         int flag = 1;
-        while(flag=1)
+        while(flag==1)
         {
             if(map->buckets[posicion]!=NULL && map->buckets[posicion]->key !=NULL)
             {
