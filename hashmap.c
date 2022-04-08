@@ -56,21 +56,16 @@ void insertMap(HashMap * map, char * key, void * value) {
         {
             if(map->buckets[posicion]!=NULL && map->buckets[posicion]->key !=NULL)
             {
-                map->buckets[posicion]=nuevoPar;
-                map->size++;
-                map->current=posicion;
-                flag=0;
-            }
-            if(posicion==map->capacity)
-            {
                 posicion=(posicion+1)%map->capacity;
             }
             else
             {
-                posicion++;
+                flag=0;
             }
-
         }
+        map->buckets[posicion]=nuevoPar;
+        map->size++;
+        map->current=posicion;
     }
 
 
