@@ -262,3 +262,17 @@ Sat Apr  9 16:46:29 HSP 2022:
  tests:  12|2
 total_score: 50/70
 2d939ec
+Sat Apr  9 16:48:03 HSP 2022: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:160:31: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+         return map->buckets[0]->key;
+                ~~~~~~~~~~~~~~~^~~~~
+hashmap.c:171:39: error: return from incompatible pointer type [-Werror=incompatible-pointer-types]
+                 return map->buckets[i]->key;
+                        ~~~~~~~~~~~~~~~^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0745ae4

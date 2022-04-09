@@ -157,7 +157,7 @@ Pair * firstMap(HashMap * map) {
     if(map->buckets[0] != NULL)
     {
         map->current=0;
-        return map->buckets[0];
+        return map->buckets[0]->key;
     }
     else
     {
@@ -168,7 +168,7 @@ Pair * firstMap(HashMap * map) {
             if(map->buckets[i]!=NULL)
             {
                 map->current=i;
-                return map->buckets[i];
+                return map->buckets[i]->key;
             }
             else
             {
