@@ -43,3 +43,14 @@ hashmap.c:101:5: error: suggest parentheses around assignment used as truth valu
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6553cc0
+Fri Apr  8 20:05:27 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:120:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+8407961
