@@ -122,7 +122,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
     if(flag==3)
     {
-        return posicion;
+        return map->buckets[posicion];
     }
 }
 
