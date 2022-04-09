@@ -245,3 +245,14 @@ Sat Apr  9 16:45:03 HSP 2022:
  tests:  12|2
 total_score: 50/70
 a3e7976
+Sat Apr  9 16:46:15 HSP 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'firstMap':
+hashmap.c:184:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f7550f2
