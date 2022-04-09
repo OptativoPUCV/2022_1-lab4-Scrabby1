@@ -92,10 +92,6 @@ HashMap * createMap(long capacity) {
 
 void eraseMap(HashMap * map,  char * key) {
     Pair *dato =searchMap(map,key);
-    if(dato->key==key)
-    {
-
-    }
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
@@ -105,7 +101,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     {
         if(map->buckets[posicion]==NULL)
         {
-            return NULL;
+            flag=0;
         }
         else
         {
@@ -116,9 +112,17 @@ Pair * searchMap(HashMap * map,  char * key) {
             else
             {
                 map->current=posicion;
-                return map->buckets[posicion];
+                flag=3;
             }
         }
+    }
+    if(flag==0)
+    {
+        return NULL;
+    }
+    else
+    {
+        return map->buckets[posicion];
     }
 }
 
