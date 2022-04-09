@@ -347,3 +347,14 @@ Sat Apr  9 19:33:24 HSP 2022:
  tests:  14|2
 total_score: 50/70
 355d68f
+Sat Apr  9 19:37:58 HSP 2022: 
+ hashmap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:189:5: error: implicit declaration of function 'print' [-Werror=implicit-function-declaration]
+     print(map->current+1);
+     ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d763041
