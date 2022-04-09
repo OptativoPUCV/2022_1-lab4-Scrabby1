@@ -97,13 +97,13 @@ void eraseMap(HashMap * map,  char * key) {
 Pair * searchMap(HashMap * map,  char * key) {   
     long posicion=hash(key,map->capacity);
     int flag=1;
-    while(flag==1)
+    if(map->buckets[posicion]==NULL)
     {
-        if(map->buckets[posicion]==NULL)
-        {
-            flag=0;
-        }
-        else
+        flag=0;
+    }
+    else
+    {
+        while(flag==1)
         {
             if(is_equal(map->buckets[posicion]->key,key)==0)
             {
@@ -114,6 +114,7 @@ Pair * searchMap(HashMap * map,  char * key) {
                 map->current=posicion;
                 flag=3;
             }
+
         }
     }
     if(flag==3)
