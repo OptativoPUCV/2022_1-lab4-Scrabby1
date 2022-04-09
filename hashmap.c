@@ -205,8 +205,8 @@ Pair * nextMap(HashMap * map) {
             }
             else
             {
-                i=(i+1)%map->capacity;
-                if(i==map->capacity-1)
+                i=(i+1);
+                if(i==map->capacity)
                 {
                     map->current=i;
                     return NULL;
