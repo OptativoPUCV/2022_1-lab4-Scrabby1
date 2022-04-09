@@ -90,9 +90,12 @@ HashMap * createMap(long capacity) {
     return mapa;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+void eraseMap(HashMap * map,  char * key) {
+    Pair *dato =searchMap(map,key);
+    if(dato->key==key)
+    {
 
-
+    }
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
@@ -117,7 +120,6 @@ Pair * searchMap(HashMap * map,  char * key) {
             }
         }
     }
-    return NULL;
 }
 
 Pair * firstMap(HashMap * map) {
