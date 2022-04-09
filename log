@@ -373,3 +373,9 @@ c:\mingw\include\stdio.h:454:38: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c6e4106
+Sat Apr  9 19:38:42 HSP 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  14|2
+total_score: 50/70
+15c1765
