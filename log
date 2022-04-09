@@ -358,3 +358,18 @@ hashmap.c:189:5: error: implicit declaration of function 'print' [-Werror=implic
 cc1.exe: all warnings being treated as errors
 Compilation failed
 d763041
+Sat Apr  9 19:38:11 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:189:12: error: passing argument 1 of 'printf' makes pointer from integer without a cast [-Werror=int-conversion]
+     printf(map->current+1);
+            ^~~
+In file included from test.c:1:0:
+c:\mingw\include\stdio.h:454:38: note: expected 'const char *' but argument is of type 'long int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  int printf (const char *, ...);
+                                      ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c6e4106

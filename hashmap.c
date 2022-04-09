@@ -186,7 +186,7 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
     long aux;
-    print(map->current+1);
+    printf(map->current+1);
     if(map->buckets[map->current+1]!=NULL && map->buckets[map->current+1]->key!=NULL)
     {
         aux=map->current;
