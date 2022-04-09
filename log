@@ -32,3 +32,14 @@ Fri Apr  8 18:32:23 HSP 2022:
  tests:  5|4
 total_score: 30/70
 fac6836
+Fri Apr  8 20:04:54 HSP 2022: 
+ hashmap.c | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:101:5: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+     while(flag=1)
+     ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6553cc0
