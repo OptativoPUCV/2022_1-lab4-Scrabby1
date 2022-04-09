@@ -54,3 +54,9 @@ hashmap.c:120:1: error: control reaches end of non-void function [-Werror=return
 cc1.exe: all warnings being treated as errors
 Compilation failed
 8407961
+Fri Apr  8 20:07:36 HSP 2022: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  5|4
+total_score: 30/70
+9d441fc
