@@ -99,3 +99,17 @@ hashmap.c:127:1: error: control reaches end of non-void function [-Werror=return
 cc1.exe: all warnings being treated as errors
 Compilation failed
 c6e216f
+Fri Apr  8 20:44:34 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:125:16: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return posicion;
+                ^~~~~~~~
+hashmap.c:127:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+86188bc
