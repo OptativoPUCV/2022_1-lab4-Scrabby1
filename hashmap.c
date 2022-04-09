@@ -195,7 +195,7 @@ Pair * nextMap(HashMap * map) {
     else
     {
         long flag = 1;
-        long i=map->current+2;
+        long i=map->current+1;
         while(flag==1)
         {
             if(map->buckets[i]!=NULL && map->buckets[i]->key!=NULL)
@@ -215,6 +215,5 @@ Pair * nextMap(HashMap * map) {
         }
 
     }
-
     return NULL;
 }
