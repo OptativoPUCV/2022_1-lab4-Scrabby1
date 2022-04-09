@@ -82,3 +82,9 @@ hashmap.c:94:11: error: unused variable 'dato' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a04b02c
+Fri Apr  8 20:38:53 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|4
+total_score: 30/70
+858a843
