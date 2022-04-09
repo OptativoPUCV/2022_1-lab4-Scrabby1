@@ -154,7 +154,30 @@ Pair * searchMap(HashMap * map,  char * key) {
 }
 
 Pair * firstMap(HashMap * map) {
-
+    if(map->buckets[0] != NULL)
+    {
+        return map->buckets[0];
+    }
+    else
+    {
+        long flag=1;
+        long i =1;
+        while(flag==1)
+        {
+            if(map->buckets[i]!=NULL)
+            {
+                return map->buckets[i];
+            }
+            else
+            {
+                i=(i+1)%map->capacity;
+                if(i==0)
+                {
+                    return NULL;
+                }
+            }
+        }
+    }
     return NULL;
 }
 
