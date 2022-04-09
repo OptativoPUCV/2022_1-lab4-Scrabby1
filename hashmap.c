@@ -91,7 +91,7 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {
-    
+
 }
 
 Pair * searchMap(HashMap * map,  char * key) {   
@@ -120,7 +120,7 @@ Pair * searchMap(HashMap * map,  char * key) {
     {
         return NULL;
     }
-    else
+    if(flag==3)
     {
         return map->buckets[posicion];
     }

@@ -88,3 +88,14 @@ Fri Apr  8 20:38:53 HSP 2022:
  tests:  5|4
 total_score: 30/70
 858a843
+Fri Apr  8 20:40:37 HSP 2022: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:127:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+c6e216f
