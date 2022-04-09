@@ -113,3 +113,26 @@ hashmap.c:127:1: error: control reaches end of non-void function [-Werror=return
 cc1.exe: all warnings being treated as errors
 Compilation failed
 86188bc
+Fri Apr  8 20:45:42 HSP 2022: 
+ hashmap.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'searchMap':
+hashmap.c:98:20: error: initialization makes pointer from integer without a cast [-Werror=int-conversion]
+     long *posicion=hash(key,map->capacity);
+                    ^~~~
+hashmap.c:110:25: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+                 posicion=(*posicion+1)%map->capacity;
+                         ^
+hashmap.c:114:29: error: assignment makes integer from pointer without a cast [-Werror=int-conversion]
+                 map->current=posicion;
+                             ^
+hashmap.c:125:16: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return *posicion;
+                ^~~~~~~~~
+hashmap.c:127:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+bf2f180
