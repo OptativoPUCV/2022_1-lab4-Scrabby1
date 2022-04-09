@@ -110,6 +110,7 @@ void eraseMap(HashMap * map,  char * key) {
             {
                 map->buckets[posicion]->key=NULL;
                 map->size--;
+                flag=0;
             }
             else
             {
