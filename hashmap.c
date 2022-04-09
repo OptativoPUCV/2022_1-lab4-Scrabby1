@@ -105,7 +105,7 @@ Pair * searchMap(HashMap * map,  char * key) {
         }
         else
         {
-            if(map->buckets[posicion]->key!=key)
+            if(is_equal(map->buckets[posicion]->key,key)==0)
             {
                 posicion=(posicion+1)%map->capacity;
             }
