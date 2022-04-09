@@ -209,7 +209,7 @@ Pair * nextMap(HashMap * map) {
                 if(i==0)
                 {
                     map->current=i;
-                    return NULL;
+                    flag=0;
                 }
             }
         }
