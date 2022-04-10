@@ -185,7 +185,6 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-    long aux;
     long i=map->current;
     i=(i+1)%map->capacity;
     if(i==0)

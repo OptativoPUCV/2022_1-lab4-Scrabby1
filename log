@@ -488,3 +488,8 @@ hashmap.c:188:10: error: unused variable 'aux' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 68071cf
+Sat Apr  9 20:25:52 HSP 2022: 
+ hashmap.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+62f793c
