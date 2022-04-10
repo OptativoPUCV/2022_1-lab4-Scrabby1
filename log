@@ -477,3 +477,14 @@ Sat Apr  9 20:18:19 HSP 2022:
  1 file changed, 8 insertions(+), 3 deletions(-)
  tests:  0|0
 c821bbc
+Sat Apr  9 20:25:39 HSP 2022: 
+ hashmap.c | 27 +++++----------------------
+ 1 file changed, 5 insertions(+), 22 deletions(-)
+In file included from test.c:4:0:
+hashmap.c: In function 'nextMap':
+hashmap.c:188:10: error: unused variable 'aux' [-Werror=unused-variable]
+     long aux;
+          ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+68071cf

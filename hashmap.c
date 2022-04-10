@@ -186,39 +186,22 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
     long aux;
-    if(map->buckets[map->current+1]!=NULL && map->buckets[map->current+1]->key!=NULL)
+    long i=map->current;
+    i=(i+1)%map->capacity;
+    if(i==0)
     {
-        aux=map->current+1;
-        map->current++;
-        return map->buckets[aux];
+        return NULL;
     }
-    else
+    long flag=1;
+    while(flag==1)
     {
-        long flag = 1;
-        long i=map->current;
+        if(map->buckets[i]!=NULL || map->buckets[i]->key!=NULL)
+        {
+            flag=0;
+            i--;
+        }
         i=(i+1)%map->capacity;
-        if(i==0)
-        {
-            return NULL;
-        }
-        while(flag==1)
-        {
-            if(map->buckets[i]!=NULL || map->buckets[i]->key!=NULL)
-            {
-                map->current=i;
-                return map->buckets[i];
-            }
-            else
-            {
-                i=(i+1)%map->capacity;
-                if(i==0)
-                {
-                    map->current=i;
-                    return NULL;;
-                }
-            }
-        }
-
     }
-    return NULL;
+    map->current=i;
+    return map->buckets[i];
 }
