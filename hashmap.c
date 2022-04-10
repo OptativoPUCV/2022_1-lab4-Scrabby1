@@ -191,14 +191,9 @@ Pair * nextMap(HashMap * map) {
     {
         return NULL;
     }
-    long flag=1;
-    while(flag==1)
+    
+    while(map->buckets[i]==NULL || map->buckets[i]->key==NULL)
     {
-        if(map->buckets[i]!=NULL || map->buckets[i]->key!=NULL)
-        {
-            flag=0;
-            i--;
-        }
         i=(i+1)%map->capacity;
     }
     map->current=i;

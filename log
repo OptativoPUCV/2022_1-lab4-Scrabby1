@@ -493,3 +493,9 @@ Sat Apr  9 20:25:52 HSP 2022:
  1 file changed, 1 deletion(-)
  tests:  0|0
 62f793c
+Sat Apr  9 20:30:13 HSP 2022: 
+ hashmap.c | 9 ++-------
+ 1 file changed, 2 insertions(+), 7 deletions(-)
+ tests:  15|2
+total_score: 50/70
+7c096de
